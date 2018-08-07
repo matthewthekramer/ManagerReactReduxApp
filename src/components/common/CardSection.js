@@ -6,7 +6,7 @@ serves as a resusable component to wrap each section in a card
 */
 const CardSection = (props) => {
   return (
-    <View style={styles.containerStyle}>
+    <View style={[styles.containerStyle, props.style]}>
       {props.children}
     </View>
   );
@@ -24,4 +24,4 @@ const styles = {
   }
 };
 
-export {CardSection};
+export { CardSection };
